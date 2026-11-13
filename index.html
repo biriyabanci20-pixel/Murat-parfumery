@@ -46,7 +46,7 @@
         <!-- ARAMA VE FİLTRELER -->
         <div class="mb-8 flex flex-col md:flex-row gap-4 items-center justify-between">
             <div class="w-full md:w-96 relative">
-                <input type="text" id="search-input" placeholder="Parfüm ara (örn. Sauvage, Baccarat, Aventus)..." 
+                <input type="text" id="search-input" placeholder="Parfüm ara (örn. Naxos, Sauvage, Aventus)..." 
                     class="w-full pl-4 pr-10 py-3 bg-white border border-stone-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-stone-900 shadow-sm transition">
                 <span class="absolute right-3 top-3.5 text-stone-400">🔍</span>
             </div>
@@ -92,7 +92,7 @@
                             <span class="text-xl">📞</span>
                             <div>
                                 <strong class="text-stone-900 block">WhatsApp / İletişim:</strong>
-                                <a href="https://wa.me/905321537497" target="_blank" class="text-emerald-700 font-bold hover:underline">+90 532 153 74 97</a>
+                                <a href="https://wa.me/905334898006" target="_blank" class="text-emerald-700 font-bold hover:underline">+90 533 489 8006</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-3">
@@ -105,13 +105,13 @@
                     </div>
 
                     <div class="mt-8">
-                        <a href="https://wa.me/905321537497?text=Merhaba%20Murat%20Bey,%20mağazanızı%20ziyaret%20etmek%20istiyorum." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl shadow-sm transition">
+                        <a href="https://wa.me/905334898006?text=Merhaba%20Murat%20Bey,%20mağazanızı%20ziyaret%20etmek%20istiyorum." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl shadow-sm transition">
                             💬 WhatsApp ile Sipariş / İletişim
                         </a>
                     </div>
                 </div>
 
-                <!-- Google Maps Harita Alanı (Leyla Atakan Caddesi No:33 Konum Odaklı) -->
+                <!-- Google Maps Harita Alanı -->
                 <div class="w-full h-80 rounded-2xl overflow-hidden border border-stone-200 shadow-inner">
                     <iframe 
                         width="100%" 
@@ -136,63 +136,144 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT: 300 ÜRÜN, ORİJİNAL GÖRSELLER VE WHATSAPP ENTEGRASYONU -->
+    <!-- JAVASCRIPT: 300 TAM LİSTE, ÇEŞİTLİ ŞİŞE GÖRSELLERİ VE YENİ WHATSAPP NUMARASI -->
     <script>
-        const WHATSAPP_NUMARASI = "905321537497"; 
+        const WHATSAPP_NUMARASI = "905334898006"; 
 
-        const perfumes = [
-            { code: "MP-E001", name: "D. Sauvage Elixir - 50 ml", ref: "Dior Sauvage Elixir", cat: "Erkek", family: "Aromatik Baharatlı", desc: "Greyfurt, tarçın, kakule ve sandal ağacı notalarıyla yoğun maskülen.", img: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80", price: "450 ₺" },
-            { code: "MP-E002", name: "D. Sauvage EDP - 50 ml", ref: "Dior Sauvage EDP", cat: "Erkek", family: "Aromatik Turunçgil", desc: "Bergamot, biber, lavanta ve ambroksan ile ferah imza koku.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80", price: "450 ₺" },
-            { code: "MP-E003", name: "B. de Chanel EDP - 50 ml", ref: "Bleu de Chanel EDP", cat: "Erkek", family: "Odunsu Aromatik", desc: "Greyfurt, nane, zencefil ve sedir ağacı ile sofistike profil.", img: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80", price: "450 ₺" },
-            { code: "MP-E004", name: "C. Aventus - 50 ml", ref: "Creed Aventus", cat: "Erkek", family: "Meyveli Şipre", desc: "Ananas, bergamot, huş ağacı ve meşe yosunu ile karizmatik.", img: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=600&q=80", price: "480 ₺" },
-            { code: "MP-E005", name: "T.F. Oud Wood - 50 ml", ref: "Tom Ford Oud Wood", cat: "Erkek", family: "Odunsu Oryantal", desc: "Egzotik gül ağacı, kakule ve öd ağacının lüks harmanı.", img: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80", price: "480 ₺" },
-            { code: "MP-K001", name: "Y.S.L. Libre Intense - 50 ml", ref: "Yves Saint Laurent Libre Intense", cat: "Kadın", family: "Oryantal Fougere", desc: "Mandalina, Fransız lavantası ve madagaskar vanilyası.", img: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80", price: "450 ₺" },
-            { code: "MP-K002", name: "Y.S.L. Black Opium - 50 ml", ref: "Yves Saint Laurent Black Opium", cat: "Kadın", family: "Oryantal Vanilya", desc: "Armut, kahve, yasemin ve vanilya ile bağımlılık yapıcı.", img: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=600&q=80", price: "450 ₺" },
-            { code: "MP-K003", name: "C.H. Good Girl - 50 ml", ref: "Carolina Herrera Good Girl", cat: "Kadın", family: "Oryantal Çiçeksi", desc: "Badem, kahve, sümbülteber ve tonka fasulyesi.", img: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80", price: "450 ₺" },
-            { code: "MP-U001", name: "M.F.K. Baccarat Rouge 540 - 50 ml", ref: "MFK Baccarat Rouge 540", cat: "Unisex", family: "Oryantal Çiçeksi", desc: "Safran, yasemin, amberwood ve sedir ile kristal parlaklığı.", img: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80", price: "500 ₺" },
-            { code: "MP-U002", name: "M.F.K. Oud Satin Mood - 50 ml", ref: "MFK Oud Satin Mood", cat: "Unisex", family: "Oryantal Odunsu", desc: "Bulgar gülü, menekşe, Laos öd ağacı ve vanilya.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80", price: "500 ₺" }
+        // Farklı lüks şişe görsle havuzu (Ürünlerin görsel çeşitliliği için)
+        const bottleImages = [
+            "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"
         ];
 
-        function generateAll300() {
-            for(let i=6; i<=100; i++) {
+        let perfumes = [];
+
+        // 100 Erkek Parfümü
+        const erkekIsimleri = [
+            "Dior Sauvage Elixir", "Dior Sauvage EDP", "Bleu de Chanel EDP", "Creed Aventus", "Tom Ford Oud Wood", 
+            "Tom Ford Ombre Leather", "Tom Ford Grey Vetiver", "Armani Acqua di Gio Profumo", "Armani Stronger With You Intensely", "Paco Rabanne 1 Million",
+            "Paco Rabanne Invictus", "Paco Rabanne Phantom", "Y.S.L. Y EDP", "Y.S.L. La Nuit de L'Homme", "JPG Le Male Le Parfum",
+            "JPG Ultra Male", "JPG Le Beau", "Versace Eros EDP", "Versace Dylan Blue", "Versace Pour Homme",
+            "Dior Homme Intense", "Dior Fahrenheit", "Chanel Allure Homme Sport", "Chanel Egoiste Platinum", "PdM Layton",
+            "PdM Pegasus", "PdM Herod", "PdM Carlisle", "PdM Haltane", "Spicebomb Extreme",
+            "Terre d'Hermes", "D&G The One EDP", "D&G Light Blue Pour Homme", "Givenchy Reserve Privee", "Givenchy Pi",
+            "Prada Luna Rossa Black", "Prada L'Homme", "Valentino Uomo Intense", "Azzaro The Most Wanted", "Azzaro Wanted by Night",
+            "Bvlgari Man in Black", "Bvlgari Tygar", "Bvlgari Aqva", "Montblanc Explorer", "Montblanc Legend",
+            "Gucci Guilty", "Gucci Intense Oud", "Hugo Boss Bottled", "Hugo Boss The Scent", "Carolina Herrera Bad Boy",
+            "212 VIP Men", "212 Men NYC", "Narciso Rodriguez Bleu Noir", "Armani Code Parfum", "Stronger With You Absolutely",
+            "Y.S.L. MYSLF", "Y.S.L. Tuxedo", "Tom Ford Noir Extreme", "Tom Ford Beau de Jour", "Green Irish Tweed",
+            "Silver Mountain Water", "Creed Viking", "Cedrat Boise", "Nishane Hacivat", "Roja Elysium",
+            "LV Imagination", "LV L'Immensite", "LV Meteore", "Scandal Pour Homme", "Le Male Elixir",
+            "1 Million Elixir", "Invictus Victory Elixir", "Emporio Armani He", "CK Euphoria Men", "CK Eternity Men",
+            "Burberry Hero EDP", "Burberry London", "Mr. Burberry Indigo", "Diesel Only The Brave", "Diesel Bad",
+            "Lacoste Blanc", "Lacoste Essential", "Issey Miyake Pour Homme", "Kenzo Homme EDP", "Davidoff Cool Water",
+            "Joop! Homme", "Rochas Man", "Cartier Declaration", "Pasha Edition Noire", "Bentley Intense",
+            "Lalique Encre Noire", "Hermes H24 EDP", "Bleu de Chanel Parfum", "Dior Sauvage Parfum", "Acqua di Gio Parfum",
+            "Explorer Platinum", "Valentino Uomo Born in Roma", "Penhaligon's Halfeti", "Amouage Interlude Man", "Amouage Reflection Man"
+        ];
+
+        // 100 Kadın Parfümü
+        const kadinIsimleri = [
+            "Y.S.L. Libre Intense", "Y.S.L. Black Opium", "Carolina Herrera Good Girl", "Lancome La Vie Est Belle", "Lancome Idole",
+            "Tresor Midnight Rose", "Chanel Coco Mademoiselle", "Chanel Chance Eau Tendre", "Chanel No 5 EDP", "Dior Hypnotic Poison",
+            "Dior J'adore", "Miss Dior Blooming Bouquet", "Armani Si Passione", "Armani My Way", "Burberry Her Intense",
+            "Burberry Goddess", "Burberry London", "Mugler Alien", "Mugler Angel", "PdM Delina",
+            "PdM Delina Exclusif", "PdM Oriana", "JPG Scandal", "JPG La Belle", "Tom Ford Black Orchid",
+            "Tom Ford Velvet Orchid", "Versace Crystal Noir", "Versace Bright Crystal", "Versace Dylan Purple", "Prada Paradoxe",
+            "Prada Candy", "D&G Light Blue", "D&G The Only One", "D&G Devotion", "Givenchy L'Interdit Rouge",
+            "Givenchy Irresistible", "Gucci Bloom", "Gucci Flora Gorgeous Gardenia", "Gucci Rush", "Narciso Rodriguez For Her",
+            "Narciso Rodriguez Poudree", "Narciso Rodriguez Pure Musc", "Valentino Donna Born in Roma", "Valentino Voce Viva", "Flowerbomb",
+            "Good Fortune", "Olympea", "Lady Million", "Fame", "CK Euphoria",
+            "CK Beauty", "Omnia Crystalline", "Jasmin Noir", "Twilly d'Hermes", "Eau des Merveilles",
+            "Mon Guerlain", "La Petite Robe Noire", "Shalimar", "Chloe Nomade", "Chloe Signature",
+            "Daisy", "Decadence", "Perfect", "Modern Muse", "Sensuous",
+            "Flower by Kenzo", "Jungle L'Elephant", "Amor Amor", "Noa", "Yes I Am",
+            "Nina", "L'Extase", "Mon Premier Parfum", "Love Don't Be Shy", "Good Girl Gone Bad",
+            "Kayali Vanilla 28", "Eden Juicy Apple 01", "Lazy Sunday Morning", "English Pear & Freesia", "Peony & Blush Suede",
+            "Elie Saab Le Parfum", "Girl of Now", "This is Her!", "Not a Perfume", "Intense Cafe",
+            "Roses Musk", "Roses Vanille", "Si Intense", "Mon Paris", "Dior Addict",
+            "Poison Girl", "Gabrielle Essence", "Coco Noir", "La Nuit Tresor", "Very Good Girl",
+            "Divine", "My Burberry Black", "Bombshell", "Aqua di Gioia", "Mojave Ghost"
+        ];
+
+        // 100 Unisex & Niş Parfüm
+        const unisexIsimleri = [
+            "MFK Baccarat Rouge 540", "MFK Baccarat Rouge Extrait", "MFK Oud Satin Mood", "MFK Grand Soir", "MFK Gentle Fluidity Gold",
+            "Tiziana Terenzi Kirke", "Xerjoff Erba Pura", "Xerjoff Naxos", "Xerjoff Alexandria II", "Xerjoff Lira",
+            "Xerjoff Accento", "Tom Ford Lost Cherry", "Tom Ford Tobacco Vanille", "Tom Ford Bitter Peach", "Tom Ford Tuscan Leather",
+            "Tom Ford Soleil Blanc", "Tom Ford Neroli Portofino", "Tom Ford Rose Prick", "Fucking Fabulous", "Angels' Share",
+            "Black Phantom", "Straight to Heaven", "Rolling in Love", "Initio Oud for Greatness", "Initio Side Effect",
+            "Initio Rehab", "Initio Musk Therapy", "Initio Atomic Rose", "Nishane Ani", "Hundred Silent Ways",
+            "Nishane Wulong Cha", "Fan Your Flames", "Santal 33", "Another 13", "Rose 31",
+            "Bergamote 22", "The Noir 29", "Gypsy Water", "Bal d'Afrique", "Blanche",
+            "Bibliotheque", "Orto Parisi Megamare", "Orto Parisi Terroni", "Orto Parisi Bergamask", "Nasomatto Black Afgano",
+            "Nasomatto Baraonda", "Nasomatto Pardon", "LV Ombre Nomade", "LV Afternoon Swim", "LV Pacific Chill",
+            "LV Attrape-Reves", "By the Fireplace", "Jazz Club", "Beach Walk", "Whispers in the Library",
+            "Philosykos", "Tam Dao", "Eau Duelle", "Orpheon", "Wood Sage & Sea Salt",
+            "Myrrh & Tonka", "Oud & Bergamot", "Arabians Tonka", "Chocolate Greedy", "Red Tobacco",
+            "Instant Crush", "Tonka Cola", "Amore Caffe", "Fleur Narcotique", "African Leather",
+            "Marfa", "Italian Leather", "Althair", "Oajan", "Greenley",
+            "Millesime Imperial", "Virgin Island Water", "Colonia", "Acqua di Parma Oud", "Fico di Amalfi",
+            "Tobacco Honey", "Spiritueuse Double Vanille", "Angelique Noire", "Gris Dior", "Ambre Nuit",
+            "Oud Ispahan", "Tobacolor", "Coromandel", "Sycomore", "Bianco Latte",
+            "Rosendo Mateu No 5", "Ganymede", "B683", "Vibrato", "Ambassador Intense",
+            "Andromeda", "Laudano Nero", "Guidance", "Sundazed", "Hibiscus Mahajad"
+        ];
+
+        // 300 Ürünü Oluşturma
+        function loadProducts() {
+            let id = 1;
+            
+            // Erkekleri ekle
+            erkekIsimleri.forEach((name, idx) => {
                 perfumes.push({
-                    code: `MP-E${String(i).padStart(3, '0')}`,
-                    name: `Özel Seri Erkek Parfüm #${i} - 50 ml`,
-                    ref: `Erkek Seri Model ${i}`,
+                    code: `MP-E${String(idx+1).padStart(3, '0')}`,
+                    name: `${name} - 50 ml`,
+                    ref: name,
                     cat: "Erkek",
                     family: "Odunsu / Aromatik",
-                    desc: "Uzun süre kalıcı, modern erkek koku profili.",
-                    img: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80",
+                    desc: "Uzun süre kalıcı, etkileyici erkek koku profili.",
+                    img: bottleImages[idx % bottleImages.length],
                     price: "450 ₺"
                 });
-            }
-            for(let i=4; i<=100; i++) {
+            });
+
+            // Kadınları ekle
+            kadinIsimleri.forEach((name, idx) => {
                 perfumes.push({
-                    code: `MP-K${String(i).padStart(3, '0')}`,
-                    name: `Özel Seri Kadın Parfüm #${i} - 50 ml`,
-                    ref: `Kadın Seri Model ${i}`,
+                    code: `MP-K${String(idx+1).padStart(3, '0')}`,
+                    name: `${name} - 50 ml`,
+                    ref: name,
                     cat: "Kadın",
                     family: "Çiçeksi / Meyveli",
-                    desc: "Etkileyici ve zarif kadın koku özü.",
-                    img: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80",
+                    desc: "Zarif, çekici ve büyüleyici kadın koku özü.",
+                    img: bottleImages[(idx + 2) % bottleImages.length],
                     price: "450 ₺"
                 });
-            }
-            for(let i=3; i<=100; i++) {
+            });
+
+            // Unisex & Niş ekle
+            unisexIsimleri.forEach((name, idx) => {
                 perfumes.push({
-                    code: `MP-U${String(i).padStart(3, '0')}`,
-                    name: `Özel Seri Niş Parfüm #${i} - 50 ml`,
-                    ref: `Unisex Niş Model ${i}`,
+                    code: `MP-U${String(idx+1).padStart(3, '0')}`,
+                    name: `${name} - 50 ml`,
+                    ref: name,
                     cat: "Unisex",
                     family: "Oryantal / Niş",
-                    desc: "Benzersiz ve lüks niş koku deneyimi.",
-                    img: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80",
+                    desc: "Benzersiz, lüks ve yüksek kaliteli niş deneyim.",
+                    img: bottleImages[(idx + 4) % bottleImages.length],
                     price: "500 ₺"
                 });
-            }
+            });
         }
 
-        generateAll300();
+        loadProducts();
 
         let currentCategory = "Tümü";
         let searchQuery = "";
@@ -225,7 +306,7 @@
                 const card = document.createElement("div");
                 card.className = "bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group";
                 
-                const wpMessage = encodeURIComponent(`Murat Bey, parfüm seçimim: ${p.name} (${p.ref}). Sipariş vermek istiyorum.`);
+                const wpMessage = encodeURIComponent(`Murat Bey, parfüm seçimim: ${p.name}. Sipariş vermek istiyorum.`);
                 const wpLink = `https://wa.me/${WHATSAPP_NUMARASI}?text=${wpMessage}`;
 
                 card.innerHTML = `
